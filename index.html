@@ -34,22 +34,32 @@
 			margin-right: 20px;
 		}
 
-		.bullets {
+		/* .bullets {
 
 			align-items: center;
-			/* margin-bottom: 0; */
+			margin-bottom: 0;
 			justify-content: center;
 
 
-		}
+		} */
 
 		ul.bullets {
-			text-align: left;
-			/* margin-left: 30px; */
+			
+			text-align: justify;
+			transform: translateX(20%);
+
 		}
 
-		names {
-			font-size: 10px;
+		.names {
+			font-size: 18px;
+		}
+
+		.ascii {
+			position: relative;
+			display:inline-block;
+			flex-direction: column;
+			transform: translateX(50%);
+			
 		}
 	</style>
 </head>
@@ -315,7 +325,7 @@
 							</p>
 
 
-							<ul style="text-align:left;">
+							<ul class="bullets">
 
 								<li><a
 										href="https://education.roblox.com/en-us/resources/intro-to-game-design-and-coding">Roblox:
@@ -340,7 +350,7 @@
 
 						</div>
 						<div class="canvas">
-							<img width="300" src="./images/binaryASCII.png" atl="atoi chart">
+							<img width="300" src="./images/binaryASCII.png" atl="atoi chart" class="ascii">
 						</div>
 					</div>
 			</section>
@@ -348,11 +358,11 @@
 			<section class="newsletter section">
 				<div class="container-sm">
 					<div class="newsletter-inner section-inner">
-						<!-- <div class="newsletter-header text-center"> -->
+						<div class="newsletter-header text-center">
 							<h2 class="section-title mt-0">Created By:</h2>
 							<p class="section-paragraph">[ UCF Senior Design '22 Group 48 ]</p>
 
-							<div class="fsection-title mt-0">
+							<!-- <div class="fsection-title mt-0"> -->
 								<ul class="bullets names">
 									<li>Evan C. Navarro
 										<a src="https://www.linkedin.com/in/EvanCNavarro/">[LinkedIn /</a>
@@ -377,14 +387,14 @@
 									</li>
 
 								</ul>
-							</div>
+							<!-- </div> -->
 
 
 							<button class="gitHubButton">
 								<a href="https://github.com/UCF-SD-Group-48">Check Out Our Github!</a>
 							</button>
 
-						<!-- </div> -->
+						</div>
 					</div>
 			</section>
 		</main>
