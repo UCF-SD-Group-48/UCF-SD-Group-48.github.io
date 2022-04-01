@@ -1,4 +1,4 @@
-# UCF SD2: Group 48
+# Laurel
 
 A landing page template.
 
