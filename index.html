@@ -34,17 +34,8 @@
 			margin-right: 20px;
 		}
 
-		/* .bullets {
-
-			align-items: center;
-			margin-bottom: 0;
-			justify-content: center;
-
-
-		} */
-
 		ul.bullets {
-			
+
 			text-align: justify;
 			transform: translateX(20%);
 
@@ -56,10 +47,38 @@
 
 		.ascii {
 			position: relative;
-			display:inline-block;
+			display: inline-block;
 			flex-direction: column;
 			margin: 2em
-			
+		}
+
+
+		.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: #ccc;
+		}
+
+		.panel {
+			padding: 0 18px;
+			font-size:  13px;
+			text-align: justify;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
 		}
 	</style>
 </head>
@@ -216,13 +235,13 @@
 										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
 											<defs>
 												<linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
-													<stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-													<stop stop-color="#47A1F9" stop-opacity=".16" offset="100%" />
+													<stop stop-color="#A0AFCE" stop-opacity=".8" offset="0%" />
+													<stop stop-color="#8EAA80" stop-opacity=".16" offset="100%" />
 												</linearGradient>
 												<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-b">
-													<stop stop-color="#FDFFDA" offset="0%" />
-													<stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-													<stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
+													<stop stop-color="#8EAA80" offset="0%" />
+													<stop stop-color="#8EAA80" stop-opacity=".798" offset="49.935%" />
+													<stop stop-color="#8EAA80" stop-opacity="0" offset="100%" />
 												</linearGradient>
 											</defs>
 											<g fill="none" fill-rule="evenodd">
@@ -236,9 +255,9 @@
 										</svg>
 									</div>
 									<h3 class="feature-title mt-24">Topics</h3>
-									<p class="text-sm mb-0">From cluttered to organized topic conversations where
-										you
-										can always pick up from where you left off.</p>
+									<p class="text-sm mb-0">From cluttered conversations, to categorized chat rooms; 
+										our app allows you to create Topics, 
+										for a more organized group chat experience. </p>
 								</div>
 							</div>
 							<div class="feature is-revealing">
@@ -247,13 +266,13 @@
 										<svg width="68" height="64" xmlns="http://www.w3.org/2000/svg">
 											<defs>
 												<linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
-													<stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-													<stop stop-color="#47A1F9" stop-opacity=".16" offset="100%" />
+													<stop stop-color="#C49D9A" stop-opacity=".8" offset="0%" />
+													<stop stop-color="#D0B696" stop-opacity=".16" offset="100%" />
 												</linearGradient>
 												<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-b">
-													<stop stop-color="#FDFFDA" offset="0%" />
-													<stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-													<stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
+													<stop stop-color="#D0B696" offset="0%" />
+													<stop stop-color="#D0B696" stop-opacity=".798" offset="49.935%" />
+													<stop stop-color="#D0B696" stop-opacity="0" offset="100%" />
 												</linearGradient>
 											</defs>
 											<g fill="none" fill-rule="evenodd">
@@ -268,7 +287,7 @@
 									</div>
 									<h3 class="feature-title mt-24">Friendly UX</h3>
 									<p class="text-sm mb-0"> Seemless design that allows you to use the applcation
-										without and hassle!</p>
+										without any hassle!</p>
 								</div>
 							</div>
 							<div class="feature is-revealing">
@@ -278,18 +297,18 @@
 											<defs>
 												<linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%"
 													id="feature-3-a">
-													<stop stop-color="#F97059" stop-opacity=".798" offset="0%" />
-													<stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
+													<stop stop-color="#A0AFCE" stop-opacity=".798" offset="0%" />
+													<stop stop-color="#8EAA80" stop-opacity="0" offset="100%" />
 												</linearGradient>
 												<linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%"
 													id="feature-3-b">
-													<stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-													<stop stop-color="#47A1F9" stop-opacity="0" offset="100%" />
+													<stop stop-color="#8EAA80" stop-opacity=".8" offset="0%" />
+													<stop stop-color="##A0AFCE" stop-opacity="0" offset="100%" />
 												</linearGradient>
 												<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
-													<stop stop-color="#FDFFDA" offset="0%" />
-													<stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-													<stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
+													<stop stop-color="#C49D9A" offset="0%" />
+													<stop stop-color="#C49D9A" stop-opacity=".798" offset="49.935%" />
+													<stop stop-color="#C49D9A" stop-opacity="0" offset="100%" />
 												</linearGradient>
 											</defs>
 											<g fill="none" fill-rule="evenodd">
@@ -302,11 +321,9 @@
 										</svg>
 									</div>
 									<h3 class="feature-title mt-24">Interactive Features</h3>
-									<p class="text-sm mb-0"> Set up important event, decide on multiple options, and
-										pin
-										important content to ensure your whole group chat stays up to date and not
-										miss
-										a thing! </p>
+									<p class="text-sm mb-0"> Create pins, polls, events, 
+										and alerts to ensure that your family stays
+										 up-to-date with any new group decisions.</p>
 								</div>
 							</div>
 
@@ -319,40 +336,33 @@
 				<div class="container-sm">
 					<div class="media-inner section-inner">
 						<div class="media-header text-center">
-							<h2 class="section-title mt-0">STEM Day:</h2>
-							<p class="section-paragraph mb-0">Below are some links to additional resources, for you to
-								learn more about Computer Science at a beginner level.
+							<h2 class="section-title mt-0" id="FAQ">FAQ</h2>
+							<p class="section-paragraph mb-0">Below are somes frequently asked questions
 							</p>
 
+							<button class="accordion text-sm mb-0">How do I sign up to chat with my family?</button>
+							<div class="panel">
+								<p>Click on this Download to instantly get connected to the app and chat with your close ones</p>
+							</div>
 
-							<ul class="bullets">
+							<button class="accordion text-sm mb-0">How do I chat with family without a phone number?</button>
+							<div class="panel">
+								<p>Unfortunately, you will need to register a working cellular device to use the application</p>
+							</div>
 
-								<li><a
-										href="https://education.roblox.com/en-us/resources/intro-to-game-design-and-coding">Roblox:
-										Game Design </a></li>
-								<li><a href="https://code.org/minecraft">Minecraft</a></li>
-								<li><a href="https://codea.io">Codea</a></li>
-								<li><a href="https://scratch.mit.edu">Scratch</a></li>
-								<li><a href="https://www.khanacademy.org/computing/computer-programming">Khan
-										Academy</a></li>
-								<li><a href="https://thekidshouldseethis.com/post/how-exactly-does-binary-code-work">Learn
-										Binary</a></li>
-								<li><a href="https://www.tutorialspoint.com/javascript/javascript_tutorial.pdf">
-										Learn
-										JavaScript</a></li>
-								<li><a href="https://www.tutorialspoint.com/objective_c/objective_c_tutorial.pdf">
-										Learn
-										Objective-C</a></li>
-
-							</ul>
-
-
-
+							<button class="accordion text-sm mb-0">Is this app suitable for me and my friends?</button>
+							<div class="panel">
+								<p>This application is meant for families and groups of all types to stay connected and bond with funny messages and interactions</p>
+							</div>
+							<button class="accordion text-sm mb-0">Where can I create a new group?</button>
+							<div class="panel">
+								<p>Check out How to Use to get the most out of this app and to “Create New Group”</p>
+							</div>
+							<button class="accordion text-sm mb-0">How do I add family members to my chat?</button>
+							<div class="panel">
+								<p>You can insert your family's phone number </p>
+							</div>
 						</div>
-						<div class="canvas">
-							<img width="300" src="./images/binaryASCII.png" atl="atoi chart" class="ascii">
-						</div>
-					</div>
 			</section>
 
 			<section class="newsletter section">
@@ -363,30 +373,30 @@
 							<p class="section-paragraph">[ UCF Senior Design '22 Group 48 ]</p>
 
 							<!-- <div class="fsection-title mt-0"> -->
-								<ul class="bullets names">
-									<li>Evan C. Navarro
-										<a hred="https://www.linkedin.com/in/EvanCNavarro/">[LinkedIn /</a>
-										<a href="https://github.com/EvanCNavarro">GitHub]</a>
-									</li>
-									<li>Jacques Parizeau
-										<a href="https://www.linkedin.com/in/jjparizeau/">[LinkedIn /</a>
-										<a href="https://github.com/parizeaujj">GitHub]</a>
-										<a></a>
-									</li>
-									<li>Perdo Roman
-										<a href="https://www.linkedin.com/in/pedro-roman-profile/">[LinkedIn /</a>
-										<a href="https://github.com/proman655">GitHub]</a>
-									</li>
-									<li>Richard Morand
-										<a href="https://www.linkedin.com/in/richard-m-7a5235208/">[LinkedIn /</a>
-										<a href="https://github.com/MorandR">GitHub]</a>
-									</li>
-									<li>Tu Le
-										<a href="https://www.linkedin.com/in/connect-tu-le/">[LinkedIn /</a>
-										<a href="https://github.com/tule1102">GitHub]</a>
-									</li>
+							<ul class="bullets names">
+								<li>Evan C. Navarro
+									<a hred="https://www.linkedin.com/in/EvanCNavarro/">[LinkedIn /</a>
+									<a href="https://github.com/EvanCNavarro">GitHub]</a>
+								</li>
+								<li>Jacques Parizeau
+									<a href="https://www.linkedin.com/in/jjparizeau/">[LinkedIn /</a>
+									<a href="https://github.com/parizeaujj">GitHub]</a>
+									<a></a>
+								</li>
+								<li>Perdo Roman
+									<a href="https://www.linkedin.com/in/pedro-roman-profile/">[LinkedIn /</a>
+									<a href="https://github.com/proman655">GitHub]</a>
+								</li>
+								<li>Richard Morand
+									<a href="https://www.linkedin.com/in/richard-m-7a5235208/">[LinkedIn /</a>
+									<a href="https://github.com/MorandR">GitHub]</a>
+								</li>
+								<li>Tu Le
+									<a href="https://www.linkedin.com/in/connect-tu-le/">[LinkedIn /</a>
+									<a href="https://github.com/tule1102">GitHub]</a>
+								</li>
 
-								</ul>
+							</ul>
 							<!-- </div> -->
 
 
@@ -405,13 +415,16 @@
 
 					<ul class="footer-links list-reset">
 						<li>
-							<a href="#">Privacy Policy</a>
+							<a href="./terms.html">Terms and Conditions</a>
+						</li>
+						<li>
+							<a href="./privacy.html">Privacy Policy</a>
 						</li>
 						<li>
 							<a href="#">About</a>
 						</li>
 						<li>
-							<a href="#">FAQ's</a>
+							<a href="#FAQ">FAQ's</a>
 						</li>
 					</ul>
 					<ul class="footer-social-links list-reset">
@@ -443,6 +456,26 @@
 	</div>
 
 	<script src="./js/main.min.js"></script>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+
+
+
 </body>
 
 </html>
